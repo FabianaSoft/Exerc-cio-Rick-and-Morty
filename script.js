@@ -4,6 +4,8 @@ function buscar(){
     .then(response => response.json())
     .then(data => {
         console.log(data);
+        document.getElementById('nome').innerHTML = data.name;
+        document.getElementById('foto').src = data.image;
     })
       
 }
